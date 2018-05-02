@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:text="Simple Origami"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/crane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:contentDescription="@string/action_settings"
+                android:cropToPadding="true"
+                android:onClick="craneVideo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/origamicrane" />
+
+            <ImageButton
+                android:id="@+id/cat_bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/action_settings"
+                android:onClick="catBookmarkVideo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/origamibookmarkcat" />
+
+            <ImageButton
+                android:id="@+id/butterfly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/action_settings"
+                android:onClick="butterflyVideo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/origamibutterfly" />
+
+            <ImageButton
+                android:id="@+id/elephantbookmark"
+                android:layout_width="match_parent"
+                android:layout_height="336dp"
+                android:contentDescription="@string/action_settings"
+                android:onClick="elephantBookmarkVideo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/origamielephantbookmark" />
+
+            <ImageButton
+                android:id="@+id/boat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/action_settings"
+                android:onClick="boatVideo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/origamiboat" />
+
+            <ImageButton
+                android:id="@+id/alien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/action_settings"
+                android:onClick="alienVideo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/origamialien" />
+
+            <ImageButton
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="535dp"
+                android:contentDescription="@string/action_settings"
+                android:cropToPadding="true"
+                android:onClick="catVideo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/origamicat" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
